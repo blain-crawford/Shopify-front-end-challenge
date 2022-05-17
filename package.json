@@ -2,7 +2,7 @@
   "name": "create-react-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://blain-crawford.github.io/Shopify-front-end-challenge",
+  "homepage": "http://blain-crawford.github.io/shopify-front-end-challenge",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
