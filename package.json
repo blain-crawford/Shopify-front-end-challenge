@@ -2,17 +2,36 @@
   "name": "create-react-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://blain-crawford.github.io/create-react-rest",
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.0",
+    "@mui/system": "^5.8.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.0.0",
+    "axios": "^0.27.2",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.0.1",
+    "dotenv-webpack": "^7.1.0",
+    "process": "^0.11.10",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",
+    "react-spinners": "^0.12.0",
+    "react-use-localstorage": "^3.5.3",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +53,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.12",
+    "@babel/preset-react": "^7.17.12",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1"
   }
 }
