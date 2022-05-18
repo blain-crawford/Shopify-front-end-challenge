@@ -6,6 +6,7 @@ import ApiResponses from './ApiResponses';
 import { StyledApp } from './mui-styles/appStyles';
 import axios from 'axios';
 import useLocalStorage from 'react-use-localstorage';
+import { OPEN_AI_SECRET } from './utils';
 
   // eslint-disable-next-line no-unused-vars
   const checkForStoredIdeas = (() => {
@@ -48,7 +49,7 @@ const App = () => {
       'content-type': 'application/json',
 
       // eslint-disable-next-line no-undef
-      Authorization: `Bearer ${process.env.REACT_APP_REQUEST_KEY}`,
+      Authorization: `Bearer ${OPEN_AI_SECRET}`,
     },
     data: testRequest,
     url: `https://api.openai.com/v1/engines/${selectedEngine}/completions`,
